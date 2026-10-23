@@ -44,8 +44,7 @@
           {"name": "Rend", "id": "ff3b-b65d-e725-6b45"},
           {"name": "Damage", "id": "38fb-c0fa-d111-d0e6"},
           {"name": "Critical Damage", "id": "a368-70b5-9cf8-26cd"},
-          {"name": "Weapon Traits", "id": "7595-2587-d050-6e43"},
-          {"name": "Silver", "id": "a3e3-2b48-9e57-bec2", "kind": "annotation"}
+          {"name": "Weapon Traits", "id": "7595-2587-d050-6e43"}
         ]
       },
       {

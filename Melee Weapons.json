@@ -8,6 +8,35 @@
     "library": true,
     "revision": 1,
     "type": "catalogue",
-    "sharedSelectionEntries": [{"name": "Sword", "id": "f500-5c62-d1df-42d7", "hidden": false, "import": true, "type": "upgrade"}]
+    "sharedSelectionEntries": [
+      {
+        "name": "Sword",
+        "id": "f500-5c62-d1df-42d7",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Silver", "typeId": "e523-0d04-02ba-01dc", "value": 18}],
+        "profiles": [
+          {
+            "name": "Sword",
+            "id": "2441-9a62-fb09-a041",
+            "hidden": false,
+            "selectable": true,
+            "selectionGroup": "Melee Weapons",
+            "typeId": "6fee-fa5f-8bdd-bd5d",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Range", "$text": "-", "typeId": "2d8d-2335-af8d-1fbe"},
+              {"name": "Attacks", "$text": "3", "typeId": "c24e-d5ee-88f6-0430"},
+              {"name": "Rend", "$text": "-", "typeId": "ff3b-b65d-e725-6b45"},
+              {"name": "Damage", "$text": "1", "typeId": "38fb-c0fa-d111-d0e6"},
+              {"name": "Critical Damage", "$text": "d3", "typeId": "a368-70b5-9cf8-26cd"},
+              {"name": "Weapon Traits", "$text": "Guard, Off-hand", "typeId": "7595-2587-d050-6e43"},
+              {"name": "Silver", "$text": "18", "typeId": "a3e3-2b48-9e57-bec2"}
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

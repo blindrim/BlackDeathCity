@@ -1,0 +1,12 @@
+{
+  "catalogue": {
+    "name": "Items",
+    "id": "4c56-c346-9b5a-d638",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-af0c-be9e-11c4-bdc9",
+    "gameSystemRevision": 2,
+    "library": true,
+    "revision": 1,
+    "type": "catalogue"
+  }
+}
