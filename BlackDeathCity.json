@@ -3,7 +3,7 @@
     "name": "Black Death City",
     "id": "sys-af0c-be9e-11c4-bdc9",
     "battleScribeVersion": "2.03",
-    "revision": 1,
+    "revision": 2,
     "type": "gameSystem",
     "categoryEntries": [{"name": "Leader", "id": "ce57-f676-fb6f-8175"}, {"name": "Champion", "id": "fc68-f6f8-f65d-92bc", "hidden": false}],
     "costTypes": [{"name": "Silver", "id": "e523-0d04-02ba-01dc", "defaultCostLimit": -1}],
@@ -29,14 +29,50 @@
           {"name": "Blade", "id": "1913-5238-e237-af55", "defaultValue": "4+"},
           {"name": "Bow", "id": "ea1e-9b52-bf62-8f0c", "defaultValue": "4+"},
           {"name": "Initiative", "id": "2588-979a-9ba1-f0a0"},
-          {"name": "Health", "id": "cb7d-c270-7297-f8c6"},
-          {"name": "Leadership", "id": "05c1-cdd8-1c15-14f4"},
-          {"name": "Save", "id": "8c77-5a85-1aa5-162e"}
+          {"name": "Life", "id": "cb7d-c270-7297-f8c6"},
+          {"name": "Willpower", "id": "05c1-cdd8-1c15-14f4"},
+          {"name": "Armour", "id": "8c77-5a85-1aa5-162e"}
         ]
       },
-      {"name": "Weapon", "id": "6fee-fa5f-8bdd-bd5d", "hidden": false}
+      {
+        "name": "Weapon",
+        "id": "6fee-fa5f-8bdd-bd5d",
+        "hidden": false,
+        "characteristicTypes": [
+          {"name": "Range", "id": "2d8d-2335-af8d-1fbe"},
+          {"name": "Attacks", "id": "c24e-d5ee-88f6-0430"},
+          {"name": "Rend", "id": "ff3b-b65d-e725-6b45"},
+          {"name": "Damage", "id": "38fb-c0fa-d111-d0e6"},
+          {"name": "Critical Damage", "id": "a368-70b5-9cf8-26cd"},
+          {"name": "Weapon Traits", "id": "7595-2587-d050-6e43"},
+          {"name": "Silver", "id": "a3e3-2b48-9e57-bec2", "kind": "annotation"}
+        ]
+      },
+      {
+        "name": "Armour",
+        "id": "26f8-24e9-fa13-039a",
+        "hidden": false,
+        "characteristicTypes": [
+          {"name": "Armour Value", "id": "23ad-2f06-f2ba-fb15"},
+          {"name": "Special Rules", "id": "09f7-0914-544c-8e68"},
+          {"name": "Silver", "id": "1289-919b-db89-ec8a", "kind": "annotation"}
+        ]
+      },
+      {
+        "name": "Items",
+        "id": "1257-ffa5-9278-0d97",
+        "hidden": false,
+        "characteristicTypes": [
+          {"name": "Item Type", "id": "e690-460c-4f12-5ec0"},
+          {"name": "Special Rules", "id": "75ae-13a8-1c46-f362"},
+          {"name": "Silver", "id": "543e-2472-a0dc-440e", "kind": "annotation"}
+        ]
+      }
     ],
-    "publications": [{"name": "Playtest Rules 1.0.3", "id": "787c-634f-a742-7e43", "hidden": false, "shortName": "PT1.0.3"}],
+    "publications": [
+      {"name": "Playtest Rules 1.0.3", "id": "787c-634f-a742-7e43", "hidden": false, "shortName": "PT1.0.3"},
+      {"name": "Github", "id": "2751-4fb3-0dc7-41cf", "hidden": false, "publisherUrl": "https://github.com/blindrim/BlackDeathCity.git"}
+    ],
     "selectionEntries": [
       {
         "name": "Default Root Entry",

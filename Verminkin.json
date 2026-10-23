@@ -1,0 +1,12 @@
+{
+  "catalogue": {
+    "name": "Verminkin",
+    "id": "393d-a4b2-0f2a-a768",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-af0c-be9e-11c4-bdc9",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue"
+  }
+}
