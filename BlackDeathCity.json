@@ -74,12 +74,16 @@
     ],
     "selectionEntries": [
       {
-        "name": "Default Root Entry",
-        "id": "default-entry",
+        "name": "Leaders",
+        "id": "9c36-5634-3150-c837",
         "hidden": false,
         "import": true,
-        "type": "upgrade",
-        "categoryLinks": [{"name": "Champion", "id": "59ea-04a6-1b23-8ee2", "hidden": false, "primary": false, "targetId": "fc68-f6f8-f65d-92bc"}]
+        "type": "unit",
+        "categoryLinks": [{"name": "Leader", "id": "d446-30e2-c7bc-30be", "hidden": false, "primary": false, "targetId": "ce57-f676-fb6f-8175"}],
+        "constraints": [
+          {"id": "32de-bda5-743b-cd34-min", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "min", "value": 1},
+          {"id": "32de-bda5-743b-cd34-max", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}
+        ]
       }
     ]
   }
