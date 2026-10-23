@@ -5,7 +5,13 @@
     "battleScribeVersion": "2.03",
     "revision": 2,
     "type": "gameSystem",
-    "categoryEntries": [{"name": "Leader", "id": "ce57-f676-fb6f-8175"}, {"name": "Champion", "id": "fc68-f6f8-f65d-92bc", "hidden": false}],
+    "categoryEntries": [
+      {"name": "Leader", "id": "ce57-f676-fb6f-8175"},
+      {"name": "Champion", "id": "fc68-f6f8-f65d-92bc", "hidden": false},
+      {"name": "Henchmen", "id": "2000-6649-8504-14b9", "hidden": false},
+      {"name": "Brutes", "id": "d7e1-10e1-63f5-e3f7", "hidden": false},
+      {"name": "Beasts", "id": "ab2c-b92c-dc50-87d2", "hidden": false}
+    ],
     "costTypes": [{"name": "Silver", "id": "e523-0d04-02ba-01dc", "defaultCostLimit": -1}],
     "forceEntries": [
       {
@@ -14,7 +20,10 @@
         "hidden": false,
         "categoryLinks": [
           {"name": "Leader", "id": "2d4b-26f5-176c-1402", "hidden": false, "targetId": "ce57-f676-fb6f-8175"},
-          {"name": "Champion", "id": "bbc9-893d-8f43-4e27", "hidden": false, "targetId": "fc68-f6f8-f65d-92bc"}
+          {"name": "Champion", "id": "bbc9-893d-8f43-4e27", "hidden": false, "targetId": "fc68-f6f8-f65d-92bc"},
+          {"name": "Henchmen", "id": "eb12-683a-f612-59de", "hidden": false, "targetId": "2000-6649-8504-14b9"},
+          {"name": "Brutes", "id": "be2f-936b-40bd-292f", "hidden": false, "targetId": "d7e1-10e1-63f5-e3f7"},
+          {"name": "Beasts", "id": "56bd-7de9-39aa-f18d", "hidden": false, "targetId": "ab2c-b92c-dc50-87d2"}
         ],
         "costs": [{"name": "Silver", "typeId": "e523-0d04-02ba-01dc", "value": 0}]
       }
@@ -78,11 +87,74 @@
         "id": "9c36-5634-3150-c837",
         "hidden": false,
         "import": true,
+        "sortIndex": 0,
         "type": "unit",
         "categoryLinks": [{"name": "Leader", "id": "d446-30e2-c7bc-30be", "hidden": false, "primary": false, "targetId": "ce57-f676-fb6f-8175"}],
         "constraints": [
           {"id": "32de-bda5-743b-cd34-min", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "min", "value": 1},
           {"id": "32de-bda5-743b-cd34-max", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Bloodcursed Noble",
+            "id": "01a2-c7bf-b887-8cf1",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "costs": [{"name": "Silver", "typeId": "e523-0d04-02ba-01dc", "value": 185}],
+            "selectionEntries": [
+              {
+                "name": "Weapon",
+                "id": "c886-e929-e22b-bc22",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "5aac-ef90-82b4-a368", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6501-3859-18ba-af3c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "Silver", "typeId": "e523-0d04-02ba-01dc", "value": 20}],
+                "profiles": [
+                  {
+                    "name": "Weapon",
+                    "id": "df75-d3d8-1834-fee8",
+                    "hidden": false,
+                    "selectable": true,
+                    "typeId": "6fee-fa5f-8bdd-bd5d",
+                    "typeName": "Weapon",
+                    "characteristics": [
+                      {"name": "Range", "$text": "1", "typeId": "2d8d-2335-af8d-1fbe"},
+                      {"name": "Attacks", "$text": "1", "typeId": "c24e-d5ee-88f6-0430"},
+                      {"name": "Rend", "$text": "1", "typeId": "ff3b-b65d-e725-6b45"},
+                      {"name": "Damage", "$text": "1", "typeId": "38fb-c0fa-d111-d0e6"},
+                      {"name": "Critical Damage", "$text": "1", "typeId": "a368-70b5-9cf8-26cd"},
+                      {"name": "Weapon Traits", "$text": "2", "typeId": "7595-2587-d050-6e43"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Champions",
+        "id": "796a-a1e5-a73c-4917",
+        "hidden": false,
+        "import": true,
+        "sortIndex": 1,
+        "type": "unit",
+        "categoryLinks": [{"name": "Champion", "id": "c73a-79b9-81c8-0d64", "hidden": false, "primary": false, "targetId": "fc68-f6f8-f65d-92bc"}],
+        "selectionEntries": [
+          {
+            "name": "Vargheist",
+            "id": "5f46-dda4-417f-e836",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Champion", "id": "8f2b-65df-4d3c-188f", "hidden": false, "primary": false, "targetId": "fc68-f6f8-f65d-92bc"}],
+            "costs": [{"name": "Silver", "typeId": "e523-0d04-02ba-01dc", "value": 120}]
+          }
         ]
       }
     ]
