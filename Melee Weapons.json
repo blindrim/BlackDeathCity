@@ -1,0 +1,13 @@
+{
+  "catalogue": {
+    "name": "Melee Weapons",
+    "id": "3933-d929-3865-ff91",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-af0c-be9e-11c4-bdc9",
+    "gameSystemRevision": 1,
+    "library": true,
+    "revision": 1,
+    "type": "catalogue",
+    "sharedSelectionEntries": [{"name": "Sword", "id": "f500-5c62-d1df-42d7", "hidden": false, "import": true, "type": "upgrade"}]
+  }
+}
